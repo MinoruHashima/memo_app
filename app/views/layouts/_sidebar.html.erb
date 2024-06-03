@@ -1,0 +1,12 @@
+<div class="listings">
+  <div class="listings_channels">
+    <ul class="channel_list">
+    <% @papers.each do |paper| %>
+      <%= render paper %>
+      <p>
+        <%= link_to "Show this paper", paper %>
+      </p>
+    <% end %>
+    </ul>
+  </div>
+</div>
